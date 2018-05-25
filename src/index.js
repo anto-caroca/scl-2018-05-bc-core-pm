@@ -1,1 +1,14 @@
 /* Acá va tu código */
+function btnEnviar(){
+
+    let txtMensaje = document.caesarForm.mensaje.value;
+    
+    if(txtMensaje===""){
+        alert("debe escribir un mensaje");
+        document.caesarForm.mensaje.focus();
+        return false;
+    }else{
+        alert("mensaje enviado");
+        return true;
+    }
+    }

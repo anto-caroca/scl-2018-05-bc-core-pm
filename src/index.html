@@ -5,9 +5,47 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <div id="root"></div>
+<body>
+  <header>
+    <h1>Caesar Cipher</h1>
+
+    <nav>
+        <ul>
+        <li><a href="index.html">Cifrar</a></li>
+        <li><a href="index2.html">Descifrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+<form name="caesarForm" value="register" action="" method="post" onsubmit="return btnEnviar()">
+  
+    <div id="root">
+  <fieldset>
+      <legend>Cifrar Mensajes</legend>
+      <br/><br/>
+      Escribe tu mensaje para comenzar a cifrar<br/>
+      <textarea  name="mensaje" id="message1" cols="40" rows="6"></textarea>
+      <br/><br/>
+  
+      <label for="number">Seleccione un offset/desplazamiento para el mensaje</label>
+      <br>
+      <input type="number" name="number" id="number"/>
+      <br/><br/>
+
+<div class="button">
+    <button type="submit">Enviar</button>
+  </div>
+  <br/><br/>
+
+Resultado del mensaje cifrado<br/>
+      <textarea name="mensaje" cols="40" rows="6"></textarea>
+      <br/><br/>
+
+</fieldset>
+</div>
+</form>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
