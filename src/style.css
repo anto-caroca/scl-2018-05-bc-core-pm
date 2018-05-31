@@ -3,8 +3,10 @@
 body{
     font-family: 'Open Sans', sans-serif;
     margin:0 auto;
-    width:40%;
+    width:35%;
+    background-color: beige;
     }
+    
     h1{
     color:brown;
     }
@@ -20,7 +22,7 @@ body{
     }
     nav li{
         display:inline-block;
-        float:center;
+        float:none;
     }
     nav a:link, nav a:visited{
         background-color:brown;
