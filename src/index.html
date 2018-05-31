@@ -2,13 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
+  <title>Caesars Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <script src="app.js"></script>
   <header>
-    <h1>Caesar Cipher</h1>
+    <h1>Cifrado César</h1>
 
     <nav>
         <ul>
@@ -19,28 +20,30 @@
   </header>
 
   
-<form name="caesarForm" value="register" action="" method="post" onsubmit="return btnEnviar()">
+<form name="caesarForm" id="form" action="" method="post" onsubmit="return validate()">
   
     <div id="root">
   <fieldset>
       <legend>Cifrar Mensajes</legend>
       <br/><br/>
       Escribe tu mensaje para comenzar a cifrar<br/>
-      <textarea  name="mensaje" id="message1" cols="40" rows="6"></textarea>
+      <textarea  name="messageToEncrypt" autofocus="" required="" id="encrypt" cols="40" rows="6"></textarea>
+
       <br/><br/>
   
       <label for="number">Seleccione un offset/desplazamiento para el mensaje</label>
       <br>
-      <input type="number" name="number" id="number"/>
+      <input type="number" min="0" max="26" name="number" autofocus="" required="" id="offsetNumber"/>
       <br/><br/>
 
-<div class="button">
-    <button type="submit">Enviar</button>
+  <div class="button">  
+    <input id="send" type="submit" value="Enviar">
   </div>
+ 
   <br/><br/>
 
 Resultado del mensaje cifrado<br/>
-      <textarea name="mensaje" cols="40" rows="6"></textarea>
+      <textarea name="cipheredMessage" id="cipheredMessage" cols="40" rows="6"></textarea>
       <br/><br/>
 
 </fieldset>
