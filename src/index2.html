@@ -3,13 +3,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
+  <title>Caesars Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <h1>Caesar Cipher</h1>
+    <h1>Cifrado César</h1>
 
     <nav>
         <ul>
@@ -20,22 +20,23 @@
   </header>
 
   
-<form action="" method="post">
+  <form name="caesarForm" id="form" action="" method="post" onsubmit="return validate2()">
+  
     <div id="root">
   <fieldset>
       <legend>Descifrar Mensajes</legend>
       <br/><br/>
       Escribe tu mensaje para comenzar a Descifrar<br/>
-      <textarea name="mensaje" cols="40" rows="6"></textarea>
+      <textarea  name="messageToDecrypt" autofocus="" required="" id="decrypt" cols="40" rows="6"></textarea>
       <br/><br/>
 
 <div class="button">
-    <button type="submit">Enviar</button>
+  <input id="send2" type="submit" value="Enviar">
   </div>
   <br/><br/>
 
 Resultado del mensaje Descifrado<br/>
-      <textarea name="mensaje" cols="40" rows="6"></textarea>
+      <textarea name="finalMessage" id="finalMessage"  cols="40" rows="6"></textarea>
       <br/><br/>
 
 </fieldset>
