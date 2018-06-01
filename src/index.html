@@ -7,37 +7,31 @@
 </head>
 
 <body>
-    <script src="app.js"></script>
   <header>
     <h1>Cifrado César</h1>
-
-    <nav>
-        <ul>
-        <li><a href="index.html">Cifrar</a></li>
-        <li><a href="index2.html">Descifrar</a></li>
-      </ul>
-    </nav>
   </header>
-
-  
-<form name="caesarForm" id="form" action="" method="post" onsubmit="return validate()">
   
     <div id="root">
+      
   <fieldset>
       <legend>Cifrar Mensajes</legend>
       <br/><br/>
       Escribe tu mensaje para comenzar a cifrar<br/>
-      <textarea  name="messageToEncrypt" autofocus="" required="" id="encrypt" cols="40" rows="6"></textarea>
+      <textarea  name="messageToEncrypt" autofocus="" id="encrypt" cols="40" rows="6"></textarea>
 
       <br/><br/>
-  
+
       <label for="number">Seleccione un offset/desplazamiento para el mensaje</label>
       <br>
-      <input type="number" min="0" max="26" name="number" autofocus="" required="" id="offsetNumber"/>
+      <input type="number" min="0"  name="number" autofocus="" id="offsetNumber"/>
       <br/><br/>
 
   <div class="button">  
-    <input id="send" type="submit" value="Enviar">
+    <p></p>
+    <button onclick="validate()">Enviar</button>
+    <button onclick="validate2()">Descifrar</button>
+    <button onclick="location.reload()" id="reset">Limpiar</button>
+  </p>
   </div>
  
   <br/><br/>
@@ -48,7 +42,6 @@ Resultado del mensaje cifrado<br/>
 
 </fieldset>
 </div>
-</form>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
