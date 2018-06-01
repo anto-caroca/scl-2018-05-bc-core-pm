@@ -5,33 +5,13 @@ body{
     margin:0 auto;
     width:35%;
     background-color: beige;
+    font-weight:bold;
     }
     
     h1{
     color:brown;
     }
-    a:link, a:visited{
-        text-decoration:none;
-        color:brown;
-        font-weight:bold;
-    }
     
-    nav ul{
-        list-style-type:none;
-        padding:0;
-    }
-    nav li{
-        display:inline-block;
-        float:none;
-    }
-    nav a:link, nav a:visited{
-        background-color:brown;
-        color:white;
-        display:block;
-        width:160px;
-        text-align:center;
-        padding:10px 0;
-    }
-    nav a:hover{
-        background-color:black;
-    }
+.button :hover{
+    background-color: brown;
+}
