@@ -42,7 +42,7 @@ sistema ROT13.
 
 ## Consideraciones generales
 
-Esta aplicación se puede visualizar usando Github Pages. La funcionalidad que brinda es poder cifrar un mensaje utilizando el cifrado César. Se pueden ingresar letras minúsculas y mayúsculas, y un número de desplazamiento para el cifrado. Esta aplicación necesita mejoras para poder brindar un descifrado.  
+Esta aplicación se puede visualizar usando Github Pages. La funcionalidad que brinda es poder cifrar un mensaje utilizando el cifrado César. Se pueden ingresar letras minúsculas y mayúsculas, y un número de desplazamiento para el cifrado. Esta aplicación necesita mejoras para poder brindar un descifrado en letras minúsculas, pero si descifra en matúsculas.  
 
 Se optó por diseñar una interfaz sencilla e intuitiva para que no distraiga la atención de los usuarios. 
 
